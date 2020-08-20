@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Simi\SimiconnectorRest\Api\SimiconnectorapiInterface" type="Simi\SimiconnectorRest\Api\Simiconnectorapi"/>
+    <!-- override to add cart with old date type model magento instead of webapi model - uncomment it with simi pwa studio -->
+    <preference for="Magento\Catalog\Model\Webapi\Product\Option\Type\Date" type="Simi\SimiconnectorRest\Override\Model\Product\Option\Type\Date" />
+</config>
